@@ -19,8 +19,19 @@
         <label for="node-input-name"><i class="icon-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
+    <div class="form-tips"><b>Tip:</b> This is here to help.</div>
 </script>
 
 <script type="text/x-red" data-help-name="lower-case">
     <p>A simple node that converts the message payloads into all lower-case characters</p>
+    <h3>Outputs</h3>
+        <dl class="message-properties">
+            <dt>payload
+                <span class="property-type">string | buffer</span>
+            </dt>
+        </dl>
+   <h3>Details</h3>
+   <p>Outputs an object called <code>msg</code> containing <code>msg.topic</code> and
+    <code>msg.payload</code>. msg.payload is a string.</p>
+   <p>Some more information about the node.</p>
 </script>
