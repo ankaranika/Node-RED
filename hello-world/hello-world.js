@@ -1,5 +1,5 @@
 // Sample Node-RED node file
-module.exports = (RED) => {
+module.exports = function(RED) {
   // require any external libraries we may need.
   // var foo = require('foo library');
 
