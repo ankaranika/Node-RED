@@ -18,10 +18,10 @@ module.exports = (RED) => {
     msg.payload = 'Hello World !';
 
     // respond to inputs....
-    node.on('input', (message) => {
-      node.warn(`I saw a payload: ${message.payload}`);
+    node.on('input', (msg) => {
+      node.warn(`I saw a payload: ${msg.payload}`);
       // in this example just send it straight on. Should process it here really
-      node.send(message);
+      node.send(msg);
     });
   }
 
