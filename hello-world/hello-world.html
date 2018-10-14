@@ -21,6 +21,7 @@
     <p>Outputs an object called <code>msg</code> containing <code>msg.topic</code> and
     <code>msg.payload</code>. msg.payload is a string.</p>
 </script>
+
 <!-- Finally, the node is registered along with all of its properties        -->
 <!-- The example below shows a small subset of the properties that can be set-->
 <script type="text/javascript">
@@ -34,7 +35,7 @@
         outputs: 1,             // set the number of outputs - 0 to n
         // set the icon (held in icons dir below where you save the node)
         icon: "myicon.png",     // saved in icons/myicon.png
-        lael: function() {
+        label: function() {
             return this.name || this.topic || "sample";
         },
         labelStyle: function() { // sets the class to apply to the label
