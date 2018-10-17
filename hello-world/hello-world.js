@@ -4,7 +4,7 @@ module.exports = function(RED) {
   // var foo = require('foo library');
 
   // The main code definition - most things happen in here
-  function SampleNode(n) {
+  function HelloWorldNode(n) {
     // Create a RED node
     RED.nodes.createNode(this, n);
 
@@ -27,5 +27,5 @@ module.exports = function(RED) {
 
   // Register the node by name. This must be called before overriding any of the
   // Node functions
-  RED.nodes.registerType('sample', SampleNode);
+  RED.nodes.registerType('hello-world', HelloWorldNode);
 };
